@@ -1,6 +1,6 @@
 **Teamlyzer API**
 =================
-Just replace `xx` in `https://xx.teamlyzer.com` with the country locator. **pt** for portuguese and **br** for brasilian data.
+Just replace `xx` in `https://xx.teamlyzer.com` with the country locator. **pt** for portuguese and **br** for brazilian data.
 
 Table of contents
 =================
