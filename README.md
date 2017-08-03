@@ -1,3 +1,5 @@
+[![PyPI](https://img.shields.io/pypi/v/nine.svg?label=Version)]()
+
 **Teamlyzer API**
 =================
 Just replace `xx` in `https://xx.teamlyzer.com` with the country locator. **pt** for portuguese and **br** for brazilian data.
