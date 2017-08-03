@@ -121,14 +121,8 @@ Get total of job reviews ordered by company total
     **Content:** `[ { "company_id": 67, "company_name": "CWI Software", "company_total_reviews": 1 } ]`
  
 * **Error Response:**
-
-  * **Code:** 200  <br />
-    **Content:** `{ "Error": "No company available for this ID" }`
-    
-     OR
   
   * **Code:** 404  NOT FOUND <br />
-
 
 * **Sample Call:**
 
@@ -148,19 +142,12 @@ Get total of interview reviews ordered by company total
     **Content:** `[ { "company_id": 67, "company_name": "CWI Software", "company_total_reviews": 1 } ]`
  
 * **Error Response:**
-
-  * **Code:** 200  <br />
-    **Content:** `{ "Error": "No company available for this ID" }`
-    
-     OR
   
   * **Code:** 404  NOT FOUND <br />
-
 
 * **Sample Call:**
 
     `api/total-interview-reviews`
- 
  
  
 Get job reviews for a company
