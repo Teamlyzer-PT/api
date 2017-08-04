@@ -50,7 +50,7 @@ Get overall rating for a company
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ "company_id": 67, "company_name": "CWI Software", "rating": 1.8 }`
+    **Content:** `{ "company_id": 67, "company_name": "CWI Software", "rating": 1.8, "url": "https://br.teamlyzer.com/companies/cwi-software/interview-reviews" }`
     
     **Rating metric:** x/5
     
@@ -92,7 +92,7 @@ Get detailed rating for a company
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ "career opportunity": "75.0", "company_id": 67, "company_name": "CWI Software", "interview difficult": 20.0, "management quality": "75.0", "recognition and reward": "50.0", "salary": "25.0", "work life balance": "50.0" }`
+    **Content:** `{ "career opportunity": "75.0", "company_id": 67, "company_name": "CWI Software", "interview difficult": 20.0, "management quality": "75.0", "recognition and reward": "50.0", "salary": "25.0", "work life balance": "50.0", "url": "https://br.teamlyzer.com/companies/cwi-software/interview-reviews" }`
     
     **Rating metric:** x/100 
  
@@ -120,7 +120,7 @@ Get total of job reviews ordered by company total
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `[ { "company_id": 67, "company_name": "CWI Software", "company_total_reviews": 1 } ]`
+    **Content:** `[ { "company_id": 67, "company_name": "CWI Software", "company_total_reviews": 1, "url": "https://br.teamlyzer.com/companies/cwi-software/interview-reviews" } ]`
  
 * **Error Response:**
   
@@ -141,7 +141,7 @@ Get total of interview reviews ordered by company total
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `[ { "company_id": 67, "company_name": "CWI Software", "company_total_reviews": 1 } ]`
+    **Content:** `[ { "company_id": 67, "company_name": "CWI Software", "company_total_reviews": 1, "url": "https://br.teamlyzer.com/companies/cwi-software/interview-reviews" } ]`
  
 * **Error Response:**
   
@@ -173,7 +173,7 @@ Get job reviews for a company
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `[ { "company": "CWI Software", "company_id": 67, "industry": "Software house & Internet", "rating": 2.6, "review_title": "Boa empresa para se come\u00e7ar", "size": "501-1,000", "tags": { "0": "javascript", "1": "c", "2": "java" }, "views": "110", "votes": 0 } ]`
+    **Content:** `[ { "company": "CWI Software", "company_id": 67, "industry": "Software house & Internet", "rating": 2.6, "review_title": "Boa empresa para se come\u00e7ar", "size": "501-1,000", "tags": { "0": "javascript", "1": "c", "2": "java" }, "views": "110", "votes": 0, "url": "https://br.teamlyzer.com/companies/cwi-software/job-reviews" } ]`
     
     **Rating metric:** x/5 
     
@@ -214,7 +214,7 @@ Get job reviews for a company
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `[ { "company": "CWI Software", "company_id": 67, "industry": "Software house & Internet", "rating": 1.0, "review_title": "Um bom estilo de entrevista", "size": "501-1,000", "views": "42", "votes": 0 } ]`
+    **Content:** `[ { "company": "CWI Software", "company_id": 67, "industry": "Software house & Internet", "rating": 1.0, "review_title": "Um bom estilo de entrevista", "size": "501-1,000", "views": "42", "votes": 0, "url": "https://br.teamlyzer.com/companies/cwi-software/interview-reviews" } ]`
     
     **Rating metric:** x/5
     
