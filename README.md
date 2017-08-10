@@ -22,7 +22,7 @@ Table of contents
 Authentication
 =================
 
-The access and use are free. To prevent the server overloaded please request user and pass.
+The access and use are free. To prevent the server overloaded please request user and pass. And your static IP.
 
 `curl -u user:pass -i https://xx.teamlyzer.com/api/endpoint`
 
