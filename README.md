@@ -1,4 +1,4 @@
-[![PyPI](https://img.shields.io/pypi/v/nine.svg?label=Version)]()
+![Version](https://img.shields.io/badge/Version-1.0.1-blue.svg?maxAge=2592000)
 
 **Teamlyzer API**
 =================
