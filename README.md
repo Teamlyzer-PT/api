@@ -116,6 +116,10 @@ Get total of job reviews ordered by company total
 * **URL**
 
   `api/total-job-reviews`
+  
+* **Method:**
+  
+  `GET`
 
 * **Success Response:**
 
@@ -137,6 +141,10 @@ Get total of interview reviews ordered by company total
 * **URL**
 
   `api/total-interview-reviews`
+  
+* **Method:**
+  
+  `GET`
 
 * **Success Response:**
 
