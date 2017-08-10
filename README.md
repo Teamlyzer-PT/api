@@ -115,7 +115,7 @@ Get total of job reviews ordered by company total
 
 * **URL**
 
-  `api/total-job-reviews`
+  `api/total-job-reviews/<int:page>/<int:number_of_items>`
   
 * **Method:**
   
@@ -132,7 +132,7 @@ Get total of job reviews ordered by company total
 
 * **Sample Call:**
 
-    `api/total-interview-reviews`
+    `api/total-job-reviews/1/10`
 
 
 Get total of interview reviews ordered by company total
@@ -140,7 +140,7 @@ Get total of interview reviews ordered by company total
 
 * **URL**
 
-  `api/total-interview-reviews`
+  `api/total-interview-reviews/<int:page>/<int:number_of_items>`
   
 * **Method:**
   
@@ -157,7 +157,7 @@ Get total of interview reviews ordered by company total
 
 * **Sample Call:**
 
-    `api/total-interview-reviews`
+    `api/total-interview-reviews/1/10`
  
  
 Get job reviews for a company
@@ -165,7 +165,7 @@ Get job reviews for a company
 
 * **URL**
 
-  `api/job-reviews/<int:company_id>`
+  `api/job-reviews/<int:company_id>/<int:page>/<int:number_of_items>`
 
 * **Method:**
   
@@ -176,12 +176,17 @@ Get job reviews for a company
    **Required:**
  
    `company_id=[integer]`
+   
+   **Optional:**
+ 
+   `page=[integer]`
 
+   `number_of_items=[integer]`
 
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `[ { "company": "CWI Software", "company_id": 67, "industry": "Software house & Internet", "rating": 2.6, "review_title": "Boa empresa para se come\u00e7ar", "size": "501-1,000", "tags": { "0": "javascript", "1": "c", "2": "java" }, "views": "110", "votes": 0, "url": "https://br.teamlyzer.com/companies/cwi-software/job-reviews" } ]`
+    **Content:** `[ { "company": "CWI Software", "company_id": 67, "industry": "Software house & Internet", "rating": 2.6, "review_title": "Boa empresa para se come\u00e7ar", "size": "501-1,000", "tags": { "0": "javascript", "1": "c", "2": "java" }, "views": "110", "votes": 0, "ts": "Sun, 18 Dec 2016 17:56:21 GMT", "url": "https://br.teamlyzer.com/companies/cwi-software/job-reviews" } ]`
     
     **Rating metric:** x/5 
     
@@ -199,7 +204,7 @@ Get job reviews for a company
 
 * **Sample Call:**
 
-    `api/job-reviews/67`
+    `api/job-reviews/67/1/10`
 
 
  Get interview reviews for a company
@@ -207,7 +212,7 @@ Get job reviews for a company
 
 * **URL**
 
-  `api/interview-reviews/<int:company_id>`
+  `api/interview-reviews/<int:company_id>/<int:page>/<int:number_of_items>`
 
 * **Method:**
   
@@ -218,11 +223,17 @@ Get job reviews for a company
    **Required:**
  
    `company_id=[integer]`
+   
+   **Optional:**
+ 
+   `page=[integer]`
+
+   `number_of_items=[integer]`
 
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `[ { "company": "CWI Software", "company_id": 67, "industry": "Software house & Internet", "rating": 1.0, "review_title": "Um bom estilo de entrevista", "size": "501-1,000", "views": "42", "votes": 0, "url": "https://br.teamlyzer.com/companies/cwi-software/interview-reviews" } ]`
+    **Content:** `[ { "company": "CWI Software", "company_id": 67, "industry": "Software house & Internet", "rating": 1.0, "review_title": "Um bom estilo de entrevista", "size": "501-1,000", "views": "42", "votes": 0, "ts": "Sun, 18 Dec 2016 17:56:21 GMT", "url": "https://br.teamlyzer.com/companies/cwi-software/interview-reviews" } ]`
     
     **Rating metric:** x/5
     
@@ -240,7 +251,7 @@ Get job reviews for a company
 
 * **Sample Call:**
 
-    `api/interview-reviews/67`
+    `api/interview-reviews/67/1/10`
     
 
 CSS
