@@ -1,15 +1,18 @@
-![Version](https://img.shields.io/badge/Version-1.0.2-blue.svg?maxAge=2592000)
+![Version badge](https://img.shields.io/badge/Version-1.0.2-blue.svg?maxAge=2592000)
 
 **Teamlyzer API**
 =================
-Just replace `xx` in `https://xx.teamlyzer.com` with the country locator. **pt** for portuguese and **br** for brazilian data.
+
+This repository holds the documentation for the API that powers the [Teamlyzer](https://teamlyzer.com) website.
+
+The API can be used by others to programmatically access and build upon the Teamlyzer data. 
 
 Table of contents
 =================
 
   * [Teamlyzer API](#teamlyzer-api)
   * [Table of contents](#table-of-contents)
-  * [Authentication](#authentication)
+  * [Access and authentication](#access-and-authentication)
   * [Usage](#usage)
     * [Get overall rating for a company](#get-overall-rating-for-a-company)
     * [Get detailed rating for a company](#get-detailed-rating-for-a-company)
@@ -19,18 +22,24 @@ Table of contents
     * [Get interview reviews for a company](#get-interview-reviews-for-a-company)
   * [CSS](#css)
 
-Authentication
-=================
+Access and authentication
+=========================
 
-The access and use are free. To prevent the server overloaded please request user and pass. And your static IP.
+The access and use of the API are free, but subject to authentication and limited to pre-registered static IP addresses, to prevent server overload.
+To obtain access, please contact us at <suporte@teamlyzer.com>, requesting a username and password, and providing your static IP.
+
+An authenticated request would look like this:
 
 `curl -u user:pass -i https://xx.teamlyzer.com/api/endpoint`
+
+The `xx` in the example URL above is a placeholder for a country code, and should be replaced with an actual country code.
+Use **pt** for Portuguese, and **br** for Brazilian data.
 
 Usage
 =====
 
 Get overall rating for a company
------
+--------------------------------
 
 * **URL**
 
@@ -72,7 +81,7 @@ Get overall rating for a company
  
  
 Get detailed rating for a company
------
+---------------------------------
 
 * **URL**
 
@@ -111,7 +120,7 @@ Get detailed rating for a company
     `api/detailed-rating/67`
 
 Get total of job reviews ordered by company total
------
+-------------------------------------------------
 
 * **URL**
 
@@ -136,7 +145,7 @@ Get total of job reviews ordered by company total
 
 
 Get total of interview reviews ordered by company total
------
+-------------------------------------------------------
 
 * **URL**
 
@@ -161,7 +170,7 @@ Get total of interview reviews ordered by company total
  
  
 Get job reviews for a company
------
+-----------------------------
 
 * **URL**
 
@@ -207,8 +216,8 @@ Get job reviews for a company
     `api/job-reviews/67/1/10`
 
 
- Get interview reviews for a company
------
+Get interview reviews for a company
+-----------------------------------
 
 * **URL**
 
@@ -255,7 +264,7 @@ Get job reviews for a company
     
 
 CSS
-==========
+===
 
  `.aa_rating{
 	color:white;
